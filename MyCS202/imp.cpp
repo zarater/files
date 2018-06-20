@@ -128,9 +128,9 @@ int delivery::rows(package &pkg)
 
 	return 1;
 }
-int delivery :: display()
+int delivery :: superdisplay()
 {
-		if(!start){cout << "NULL" << endl; return 0;}
+	if(!start){cout << "NULL" << endl; return 0;}
 	/*
 	   while(head != NULL)
 	   {
@@ -144,7 +144,7 @@ int delivery :: display()
 	cout << start-> getdata() << "->";
 	start = start->getnext();
 
-	return display();
+	return superdisplay();
 
 }
 // int delivery::edge()
@@ -155,3 +155,14 @@ int delivery :: display()
 // }
 bool delivery::scan(){}
 int delivery:: best3(){}
+
+//**************************************** drone*************************************
+int drone :: display()
+{
+	superdisplay();
+}
+
+//**************************************** express *************************************
+int express :: display(){}
+//**************************************** standard*************************************
+int standard :: display(){}

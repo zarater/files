@@ -47,7 +47,7 @@ int main()
 	cin >> user;
 	if(user ==1)
 	{
-		pkgs.display();
+		pkgs.superdisplay();
 	}
 	option = options(numofpkgs);
 	if(option == 1)
@@ -80,7 +80,7 @@ bool ask()
 	cin.ignore(100, '\n');
 
 	int len = strlen(response);//counts size not including null at end
-	for(i; i< len; ++i)
+	for(i=0; i< len; ++i)
 	{
 		response[i] = toupper(response[i]);
 
@@ -99,7 +99,7 @@ bool ask2()
 	cin.ignore(100, '\n');
 
 	int len = strlen(response);//counts size not including null at end
-	for(i; i< len; ++i)
+	for(i=0; i< len; ++i)
 	{
 		response[i] = toupper(response[i]);
 
