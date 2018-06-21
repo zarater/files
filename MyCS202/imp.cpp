@@ -153,16 +153,17 @@ int delivery :: superdisplay()
 // 	temp -> adjacent = &adjacency_list;
 
 // }
-bool delivery::scan(){}
-int delivery:: best3(){}
+bool delivery::scan(){return 1;}
+int delivery:: best3(){return 1;}
 
 //**************************************** drone*************************************
 int drone :: display()
 {
 	superdisplay();
+	return 1;
 }
 
 //**************************************** express *************************************
-int express :: display(){}
+int express :: display(){return 1;}
 //**************************************** standard*************************************
-int standard :: display(){}
+int standard :: display(){return 1;}

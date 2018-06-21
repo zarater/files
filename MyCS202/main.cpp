@@ -118,6 +118,7 @@ int options(int numofpkgs)
 	//ask if 1 then return options to call objects and display routes.
 	//ask user if they want to see those options inside int main and call the drone, standard, express objects to display top three routes.
 	//first ask here the variations 
+	return 1;
 }
 /* do
 		{
