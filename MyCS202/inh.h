@@ -1,9 +1,6 @@
-#include <iostream>
-#include <cstring>
-#include <cctype>
+#include "graph.h"
 
 
-using namespace std;
 
 const int SIZE = 100;
 class package 

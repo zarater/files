@@ -1,47 +1,21 @@
-#include "inh.h"
-#include <fstream>
+#include "graph.h"
 
-const int MAXSIZE = 100;
-class vertex
-{
-	public:
-	vertex();
-	~vertex();
-	int setVertexRow();
 
-	protected:
-	int row;
-};
+
 vertex :: vertex(): row(0)
 {}
 vertex :: ~vertex()
 {}
-int vertex :: setVertexRow()
+int vertex :: setVertexRow(char *neighbor)
 {
 	return 1;
 }
-
-class graph
-{
-	public:
-	graph();
-	~graph();
-	int mappull();
-	
-	protected:
-	int speedlimit;
-	char * neighbor;
-	vertex *vertextrow;
-
-};
 
 graph::graph(): speedlimit(0), neighbor(NULL)
 {}
 graph :: ~graph()
 {}
-
-
-int graph::mapppull()
+int graph::mappull()
 {
 	int x = 0;
 	ifstream file_in;
@@ -52,15 +26,16 @@ int graph::mapppull()
 	}
 	while(!file_in.eof())
 	{
-		//file_in >> speed; 
-		file_in.get(speedlimit, :);
+		file_in.get(neighbor,MAXSIZE, ':');
+		//file_in >> neighbor; 
 		file_in.ignore();
+		//file_in >> speed; 
 		//file_in.ignore();
 		vertexRow[x].setVertexRow(neighbor);
 		++x;
 	}
 	file_in.close();
-}
+
 
 
 		return 1;
