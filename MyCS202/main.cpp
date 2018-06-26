@@ -24,14 +24,22 @@ int main()
 	do
 	{
 		cout << "please type weight, size, and destination "<< endl;
+		cout << "weightnum:" <<endl;
 		cin >> weight;
+		cin.ignore(MAXSIZE, '\n');
+
+		cout << "sizenum:" <<endl;
 		cin >> size;
+		cin.ignore(MAXSIZE, '\n');
+
+		cout << "destword:" <<endl;
 		cin.get(dest, SIZE, '\n');
 		cin.ignore(SIZE,'\n');
 
 		a_pkg.create(weight, size, dest);
 		cout << "display a package? 1 = yes" << endl;
 		cin>> user;
+		cin.ignore(MAXSIZE, '\n');
 		if(user == 1)
 		{
 			cout << "display a package: " << endl;
@@ -43,25 +51,26 @@ int main()
 	// finished making packages
 	//determine which type of vehicle works.
 	user = 0;
-	cout << "display all packages to deliver?" << endl;
+	cout << "display all packages to deliver? type 1" << endl;
 	cin >> user;
+	cin.ignore(MAXSIZE, '\n');
 	if(user ==1)
 	{
 		pkgs.superdisplay();
 	}
 	option = options(numofpkgs);
-	if(option == 1)
+	if(option == 1)//all vehicle
 	{
 		a_drone.display();
 		van.display();
 		car.display();
 	}
-	if(option == 2)
+	if(option == 2)//two vehicle options
 	{
 		car.display();
 		van.display();
 	}
-	if(option == 3)
+	if(option == 3)//onevehicle option
 	{
 		van.display();
 	}
@@ -118,7 +127,7 @@ int options(int numofpkgs)
 	//ask if 1 then return options to call objects and display routes.
 	//ask user if they want to see those options inside int main and call the drone, standard, express objects to display top three routes.
 	//first ask here the variations 
-	return 1;
+	return option;
 }
 /* do
 		{

@@ -14,7 +14,8 @@ class vertex
 	int setVertexRow(char *neighbor);
 
 	protected:
-	int row;
+	char * Row;
+	int numrow;
 };
 
 class graph

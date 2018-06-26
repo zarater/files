@@ -2,12 +2,19 @@
 
 
 
-vertex :: vertex(): row(0)
+vertex :: vertex(): numrow(0), Row(NULL)
 {}
+//copy constructor
+//vertex :: vertex(): numrow()
+
 vertex :: ~vertex()
 {}
 int vertex :: setVertexRow(char *neighbor)
 {
+	Row = new char [strlen(neighbor)+1];
+	strcpy(neighbor, Row);
+	cout << neighbor << "neighbor" << endl;
+	
 	return 1;
 }
 
