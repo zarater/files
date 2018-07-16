@@ -1,4 +1,3 @@
-//David Lundquist, CS202, Program 2
 #include "node.h"
 
 //Constructor for the lll class
