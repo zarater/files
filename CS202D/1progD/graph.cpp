@@ -1,4 +1,4 @@
-//David Lundquist, CS202, Program 1
+
 #include "graph.h"
 
 //Node vertex constructor that sets next to null and creates a new adjacent object
