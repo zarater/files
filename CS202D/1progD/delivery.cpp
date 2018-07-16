@@ -1,4 +1,4 @@
-//David Lundquist, CS202, Program 1
+
 #include "delivery.h"
 
 //Constructor for the delivery base class that sets the head, gps, limit and package to null
