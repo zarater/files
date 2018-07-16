@@ -1,4 +1,3 @@
-//David Lundquist, CS202, Program 3
 #include <iostream>
 #include <cstring>
 using namespace std;
