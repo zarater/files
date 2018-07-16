@@ -1,4 +1,3 @@
-//David Lundquist, CS202, Program 3
 #include "avatar.h"
 
 int again();
