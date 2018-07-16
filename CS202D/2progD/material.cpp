@@ -1,4 +1,3 @@
-//David Lundquist, CS202, Program 2
 #include "node.h"
 
 //This function is to make the compiler happy
