@@ -1,4 +1,4 @@
-//David Lundquist, CS202, Program 1
+
 #include "delivery.h"
 
 int normal();
