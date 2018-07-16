@@ -1,4 +1,4 @@
-//David Lundquist, CS202, Program 2
+
 #ifndef node_h
 #define node_h
 #include <iostream>
